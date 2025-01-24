@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { db, Challenge } from "../db";
+import image from "../assets/image.png"
 
 interface DaysProps {
   day: number; // Use 'day' for clarity
@@ -36,6 +37,8 @@ export default function Days({ day }: DaysProps) {
         selected ? "bg-green-700 border-blue-700" : ""
       } h-[40px] w-[40px]`}
       onClick={toggleSelected}
-    ></div>
+    >
+      <img src={image}  alt="image" className={`h-[40px] w-[40px] ${selected ?" ":"hidden" } `}/>
+    </div>
   );
 }
