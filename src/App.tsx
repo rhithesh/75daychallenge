@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className='bg-black text-white min-h-screen flex justify-center items-center p-8'>
-      <div className='w-full max-w-[1280px]'>
+      <div className='w-full '>
         <div className='container text-center mb-10'>
           <h1 className='text-6xl pb-1.5 font-bold text-white'>
             120 days challenge
