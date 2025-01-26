@@ -3,6 +3,7 @@ import Dexie, { type Table } from 'dexie';
 interface Challenge {
   day: number; // Use 'day' instead of 'id' to avoid confusion with Dexie's auto-increment
   selected: boolean;
+  remarks:string
 }
 
 const db = new Dexie('challenge') as Dexie & {
